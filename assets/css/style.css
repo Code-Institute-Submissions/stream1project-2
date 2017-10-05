@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Roboto:700');
+
+/*------------------------------------------------Navbar*/
+.navbar-default {
+    min-height: 90px;
+    margin-bottom: 0px;
+}
+
+.navbar-nav {
+    margin-top: 30px;
+    font-family: Roboto;
+}
+
+.navbar  {
+    background-color: #171717;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+   background-color: #171717; 
+   color: #6D6D6D;
+}
+
+/*------------------------------------------------Carousel*/
+
+#carousel-caption1 {
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 100%;
+    bottom: 70%;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px gray;
+    
+}
+
+#carousel-caption2 {
+    text-align: left;
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 700;
+    right: 0%;
+    bottom: 50%;
+    width: 50%;
+}
+
+.carousel-inner {
+    max-height: 500px;
+}
+
+/*------------------------------------------------Welcome Text*/
+#welcometext {
+    font-family: Roboto;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    
+}
+
+#welcometext2 {
+    font-family: Roboto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/*------------------------------------------------Video*/
+video {
+    -webkit-filter: grayscale(.4);
+    -webkit-filter: contrast(1.2);
+    width: 100%;
+}
+
+/*------------------------------------------------Get inspired*/
+
+#inspired {
+    font-family: Roboto;
+    text-align: center;
+    font-size: 3em;
+    padding: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.mosaic-item {
+    position: relative;
+    margin: 5px 5px 20px 5px;
+}
+
+
+.mosaicoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #171717;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+.mosaic-item:hover .mosaicoverlay {
+  height: 100%;
+}
+
+.mosaictext a {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+ 
+}
+/*------------------------------------------------Social Media*/
+#socialmedia {
+    font-family: Roboto;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase
+}
+
+.social-links li a i{
+    width: 40px;
+    height: 40px;
+    padding: 14px 0;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    color: #fafafa;
+    box-shadow: 2px 2px 9px #888888;
+}
+
+.list-inline {
+    padding-bottom: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+#facolor {
+    background-color: #3959A0;
+    margin: 8px;
+   
+}
+
+#twittercolor {
+    background-color: #61AEEE;
+    margin: 8px;
+}
+
+#instacolor {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    margin: 8px;
+}
+
+#youtubecolor {
+    background-color: #ED3E3E;
+    margin: 8px;
+}
+
+#pinterestcolor {
+    background-color: #BF1118;
+    margin: 8px;
+}
+
+/*------------------------------------------------Footer*/
+
+footer {
+    background-color: #171717;
+    color: #fafafa;
+    padding: 0;
+    margin: 0;
+    min-height: 50px;
+    width: 100%;
+}
+
+.social-footer li a i{
+    width: 30px;
+    height: 30px;
+    padding: 10px 0;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    color: #fafafa;
+    box-shadow: 2px 2px 9px #888888;
+}
+
+#footersocial {
+    background-color: #8f8f8f;
+}
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.social-footer {
+    padding-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/*------------------------------------------------Hargeisa, Berbera, Laas Geel*/
+#frontimage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 500px;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.caption 
+span.border {
+    background-color: #171717;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    opacity: 0.7;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase
+}
+
+/*------------------------------------------------Travel Info*/
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/*------------------------------------------------Destinations*/
+.destinationpic {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+}
+
+.hoverbox {
+  transition: .3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.col-md-4:hover .hoverbox {
+  opacity: 0.7;
+}
+
+.col-md-4:hover .destinationpic {
+  opacity: 0.3;
+}
+
+
+.hovertext {
+  background-color: #171717;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+}
+
+
+
+/*------------------------------------------------Media Queries*/
+@media(min-width: 720px) {
+    #carousel-caption1 {
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 700;
+    right: 100%;
+    bottom: 75%;
+    font-size: 4em;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+#carousel-caption2 {
+    position: absolute;
+    right: 100%;
+    bottom: 65%;
+    width: 100%;
+    font-size: 2em;
+    font-family: Roboto;
+    
+}
+
+#maptextindex {
+    font-size: 2em;
+}
+
+.social-links li a i{
+    width: 80px;
+    height: 80px;
+    padding: 30px 0;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    color: #fafafa;
+}
+
+footer p {
+    margin: 20px 0;
+    text-align: left;
+}
+    
+}
