@@ -49,7 +49,7 @@
 }
 
 .carousel-inner {
-    max-height: 500px;
+    max-height: 300px;
 }
 
 /*------------------------------------------------Welcome Text*/
@@ -284,6 +284,10 @@ td, th {
   padding: 10px 30px;
 }
 
+.destinationparagraph {
+    padding-bottom: 40px;
+}
+
 /*------------------------------------------------Experiences*/
 .col-md-6:hover .hoverbox {
   opacity: 0.7;
@@ -307,6 +311,10 @@ td, th {
     width: 100%;
     text-align: left;
     letter-spacing: 2px;
+}
+
+.carousel-inner {
+    max-height: 500px;
 }
 
 #carousel-caption2 {
@@ -337,5 +345,12 @@ footer p {
     margin: 20px 0;
     text-align: left;
 }
+
     
+}
+
+@media(min-width: 1200px) {
+    .carousel-inner {
+    max-height: 700px;
+}
 }
