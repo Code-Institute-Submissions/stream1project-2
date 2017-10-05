@@ -120,6 +120,7 @@ video {
   transform: translate(-50%, -50%);
  
 }
+
 /*------------------------------------------------Social Media*/
 #socialmedia {
     font-family: Roboto;
@@ -213,19 +214,7 @@ footer {
     margin-top: 20px;
 }
 
-/*------------------------------------------------Hargeisa, Berbera, Laas Geel*/
-#frontimage {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    max-height: 500px;
-    opacity: 0.7;
-    margin-bottom: 40px;
-}
-
-.padding-0 {
-    padding: 0;
-}
+/*------------------------------------------------Header Image*/
 
 .caption 
 span.border {
@@ -243,7 +232,15 @@ span.border {
     top: 50%;
     width: 100%;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+}
+
+.bg-image {
+  background: no-repeat center center scroll;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 40px;
+  opacity: 0.8;
 }
 
 /*------------------------------------------------Travel Info*/
@@ -280,11 +277,20 @@ td, th {
 }
 
 
-.hovertext {
+.hovertext a {
   background-color: #171717;
   color: white;
   font-size: 16px;
   padding: 10px 30px;
+}
+
+/*------------------------------------------------Experiences*/
+.col-md-6:hover .hoverbox {
+  opacity: 0.7;
+}
+
+.col-md-6:hover .destinationpic {
+  opacity: 0.3;
 }
 
 
@@ -314,7 +320,7 @@ td, th {
 }
 
 #maptextindex {
-    font-size: 2em;
+    font-size: 30px;
 }
 
 .social-links li a i{
