@@ -13,12 +13,6 @@
     
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/app.js"></script>
-        <script src="https://code.angularjs.org/1.6.6/angular.js"></script>
-     
-        
         
       <nav class="navbar navbar-default">
             <div class="container">
@@ -52,61 +46,76 @@
             </div>
         </nav>
         
-       <section class="bg-image" style="background-image: url(assets/img/somaliland-26.jpg);">
+       <section class="bg-image" style="background-image: url(assets/img/flag.jpg);">
           <div style="height: 500px;"></div>
           <div class="caption">
                 <span class="border">Contact</span>
           </div>
         </section>
         
-        <div ng app="validationApp" ng-controller="formController">
         <div class="container">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="contactheader"><h1>Contact us</h1></div>
-                <form name="userForm" id="messageform" ng-submit="submitForm(userForm.$valid)" novalidate>
-                    <div class="form-group">
-                        <label for="enquirytitle">Type of enquiry:</label>
-                        <select ng-model="enquiry">
-                            <option>General Enquiry</option>
-                            <option>Website Enquiry</option>
-                            <option>Media Enquiry</option>
-                            <option>Marketing Enquiry</option>
-                        </select>
+                <form id="contactform" onsubmit="JavaScript:formValid()">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="formgroup">
+                                <label>Type of enquiry:</label>
+                                <select name="enquiry" required>
+                                    <option value="">None</option>
+                                    <option value="general">General Enquiry</option>
+                                    <option value="website">Website Enquiry</option>
+                                    <option value"media">Media Enquiry</option>
+                                    <option value"marketing">Marketing Enquiry</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="formgroup">
+                                <label>First Name *</label>
+                                <input type="text" name="firstname" class="form-control" required="" placeholder="Enter your first name.">
+                            </div>
+                        </div>
+                    
+                     
+                        <div class="col-md-6">
+                             <div class="formgroup">
+                                <label>Last Name *</label>
+                                <input type="text" name="lastname" class="form-control" required="" placeholder="Enter your last name.">
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="row">
+                        <div class="col-md-6">
+                             <div class="formgroup">
+                                <label>Email *</label>
+                                <input type="email" name="email" class="form-control" required="" placeholder="Enter your email.">
+                        </div>
+                    </div>
+                    
+                        <div class="col-md-6">
+                            <div class="formgroup">
+                                <label>Mobile</label>
+                                <input type="tel" name="mobile" class="form-control" placeholder="Enter your email.">
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="formgroup">
-                        <label>First Name</label>
-                        <input type="text" name="name" class="form-control" ng-model="name" required>
-                        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+                        <label>Message *</label>
+                        <textarea class="form-control" rows="5" name="message" required="" placeholder="Type your message here."></textarea>
                     </div>
                     
-                     <div class="formgroup">
-                        <label>Last Name</label>
-                        <input type="text" name="name" class="form-control" ng-model="name" required>
-                        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
-                    </div>
-                    
-                     <div class="formgroup">
-                        <label>Email</label>
-                        <input type="text" name="email" class="form-control" ng-model="email" required>
-                        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
-                    </div>
-                    
-                    <div class="formgroup">
-                        <label>Mobile</label>
-                        <input type="text" name="mobile" class="form-control" ng-model="mobile" required>
-                    </div>
-                    
-                    <div class="formgroup">
-                        <label>Message</label>
-                        <textarea class="form-control" rows="5" name="message" ng-model="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-default" ng-disabled="userForm$invalid">Submit</button>
-                    
+                    <input type="submit" class="btn btn-default" value="Submit"/>
                 </form>
             </div>
         </div>
-        </div>
+
         
             <footer class="container-fluid">
             <div class="row">
