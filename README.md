@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Testing
 
-Manual testing was carried out throught the creating of this projects ensuring all links and pathways worked correctly. The final version was tested across a range of browsers and mobiletest.me was used to test the site is responsive.
+Manual testing was carried out throught the creating of this projects ensuring all links and pathways worked correctly. The final version was tested across a range of browsers and http://mobiletest.me/ was used to test the site is responsive.
 
 
 ## Deployment
